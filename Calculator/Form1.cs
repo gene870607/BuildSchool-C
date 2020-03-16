@@ -21,12 +21,9 @@ namespace Calculator
         {
             InitializeComponent();
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
         }
-
-
         private void btn_plus_Click(object sender, EventArgs e)
         {
             z = "+";
@@ -115,6 +112,86 @@ namespace Calculator
             a = 0;
             b = 0;
             c = 0;
+        }
+
+        private void Btn_1_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            string s = textBox1.Text;
+            s += b.Text;
+            textBox1.Text = s;
+        }
+
+        private void Btn_2_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            string s = textBox1.Text;
+            s += b.Text;
+            textBox1.Text = s;
+        }
+
+        private void Btn_3_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            string s = textBox1.Text;
+            s += b.Text;
+            textBox1.Text = s;
+        }
+
+        private void Btn_4_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            string s = textBox1.Text;
+            s += b.Text;
+            textBox1.Text = s;
+        }
+
+        private void Btn_5_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            string s = textBox1.Text;
+            s += b.Text;
+            textBox1.Text = s;
+        }
+
+        private void Btn_6_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            string s = textBox1.Text;
+            s += b.Text;
+            textBox1.Text = s;
+        }
+
+        private void Btn_7_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            string s = textBox1.Text;
+            s += b.Text;
+            textBox1.Text = s;
+        }
+
+        private void Btn_8_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            string s = textBox1.Text;
+            s += b.Text;
+            textBox1.Text = s;
+        }
+
+        private void Btn_9_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            string s = textBox1.Text;
+            s += b.Text;
+            textBox1.Text = s;
+        }
+
+        private void Btn_0_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            string s = textBox1.Text;
+            s += b.Text;
+            textBox1.Text = s;
         }
     }
     
