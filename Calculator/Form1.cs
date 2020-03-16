@@ -13,11 +13,10 @@ namespace Calculator
 {
     public partial class Form1 : Form
     {
-        public decimal First { get; set; }
-        public decimal Second { get; set; }
-        public decimal Total { get; set; }
-
-        public object Judge { get; set; }
+        public decimal a;
+        public decimal b;
+        public decimal c;
+        public string z;
         public Form1()
         {
             InitializeComponent();
@@ -27,30 +26,52 @@ namespace Calculator
         {
         }
 
-        private void Button13_Click(object sender, EventArgs e)
+
+        private void btn_plus_Click(object sender, EventArgs e)
         {
-            First = decimal.Parse(textBox1.Text);
-            First = decimal.Parse(textBox1.Text);
-            else if (textBox1.Text != string.Empty)
+            z = "+";
+            Sum();
+        }
+
+        private void btn_cut_Click(object sender, EventArgs e)
+        {
+            z = "-";
+            Sum();
+        }
+
+        private void btn_equal_Click(object sender, EventArgs e)
+        {
+            if (z == "+")
             {
-                textBox1.Clear();
-                Second = decimal.Parse(textBox1.Text);
-                Total = First.Add(Second);
+                Sum();
+                textBox1.Text = c.ToString();
+
+            }
+            else if (z == "-")
+            {
+                Sum();
+                textBox1.Text = c.ToString();
+
             }
         }
-        private void Button1_Click(object sender, EventArgs e)
+        private decimal Sum()
         {
-            textBox1.Text += 1;
-        }
-        private void Sum()
-        {
-            if()
-            Total = First.Add(Second);
-            textBox1.Text = Total.ToString();
-        }
-        private void Button12_Click(object sender, EventArgs e)
-        {
-            
+            if (a == 0 )
+            {
+                a = int.Parse(textBox1.Text);
+                textBox1.Clear();
+            }
+            else if (a != 0 && z == "+")
+            {
+                b = int.Parse(textBox1.Text);
+                c = a.Add(b);
+            }
+            else if(a != 0 && z == "-")
+            {
+                b = int.Parse(textBox1.Text);
+                c = a.Minus(b);
+            }
+            return c;
         }
     }
     

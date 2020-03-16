@@ -178,6 +178,7 @@
             this.btn_equal.TabIndex = 12;
             this.btn_equal.Text = "=";
             this.btn_equal.UseVisualStyleBackColor = true;
+            this.btn_equal.Click += new System.EventHandler(this.btn_equal_Click);
             // 
             // btn_plus
             // 
@@ -187,6 +188,7 @@
             this.btn_plus.TabIndex = 13;
             this.btn_plus.Text = "+";
             this.btn_plus.UseVisualStyleBackColor = true;
+            this.btn_plus.Click += new System.EventHandler(this.btn_plus_Click);
             // 
             // btn_cut
             // 
@@ -196,6 +198,7 @@
             this.btn_cut.TabIndex = 14;
             this.btn_cut.Text = "-";
             this.btn_cut.UseVisualStyleBackColor = true;
+            this.btn_cut.Click += new System.EventHandler(this.btn_cut_Click);
             // 
             // btn_multiply
             // 
