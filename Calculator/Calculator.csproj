@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MathLibrary\MathLibrary.csproj">
+      <Project>{E6FD1E4C-23C3-4555-B263-1A318E1C6472}</Project>
+      <Name>MathLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
