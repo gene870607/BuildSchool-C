@@ -6,7 +6,26 @@ using System.Threading.Tasks;
 
 namespace MathLibrary
 {
-    public class Class1
-    {
+    public static class MathLibrary
+    {   
+        public static decimal Add(this decimal a, decimal b)
+        {
+            return a + b;
+        }
+
+        public static decimal Minus(this decimal a, decimal b)
+        {
+            return a - b;
+        }
+
+        public static decimal Multiple(this decimal a, decimal b)
+        {
+            return a * b;
+        }
+
+        public static decimal Divide(this decimal a, decimal b)
+        {
+            return a / b;
+        }
     }
 }
