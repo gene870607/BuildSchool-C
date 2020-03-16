@@ -53,6 +53,18 @@ namespace Calculator
                 textBox1.Text = c.ToString();
 
             }
+            else if (z == "*")
+            {
+                Sum();
+                textBox1.Text = c.ToString();
+
+            }
+            else if (z == "/")
+            {
+                Sum();
+                textBox1.Text = c.ToString();
+
+            }
         }
         private decimal Sum()
         {
@@ -71,7 +83,38 @@ namespace Calculator
                 b = int.Parse(textBox1.Text);
                 c = a.Minus(b);
             }
+            else if (a != 0 && z == "*")
+            {
+                b = int.Parse(textBox1.Text);
+                c = a.Multiple(b);
+            }
+            else if (a != 0 && z == "/")
+            {
+                b = int.Parse(textBox1.Text);
+                c = a.GetQuotient(b);
+            }
             return c;
+        }
+
+        private void Btn_multiply_Click(object sender, EventArgs e)
+        {
+            z = "*";
+            Sum();
+        }
+
+        private void Btn_divided_Click(object sender, EventArgs e)
+        {
+            z = "/";
+            Sum();
+        }
+
+        private void Btn_clear_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            z = string.Empty;
+            a = 0;
+            b = 0;
+            c = 0;
         }
     }
     

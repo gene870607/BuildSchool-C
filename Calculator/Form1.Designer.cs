@@ -208,6 +208,7 @@
             this.btn_multiply.TabIndex = 15;
             this.btn_multiply.Text = "*";
             this.btn_multiply.UseVisualStyleBackColor = true;
+            this.btn_multiply.Click += new System.EventHandler(this.Btn_multiply_Click);
             // 
             // btn_divided
             // 
@@ -217,6 +218,7 @@
             this.btn_divided.TabIndex = 16;
             this.btn_divided.Text = "\\";
             this.btn_divided.UseVisualStyleBackColor = true;
+            this.btn_divided.Click += new System.EventHandler(this.Btn_divided_Click);
             // 
             // btn_clear
             // 
@@ -226,6 +228,7 @@
             this.btn_clear.TabIndex = 17;
             this.btn_clear.Text = "C";
             this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.Btn_clear_Click);
             // 
             // btn_percent
             // 
